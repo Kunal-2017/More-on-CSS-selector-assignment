@@ -1,0 +1,63 @@
+
+/* Target all anchor tag by descendant selector */
+
+/* header a{
+    color: #ff0000;
+} */
+
+/* Target first h2 tag by direct child selector */
+
+/* header nav>h2{
+    color: #0000ff;
+    background-color: #00ffff;
+} */
+
+/* Target first p tag by nth-of-type */
+
+/* header nav p:nth-of-type(1){
+    color: #ff0000;
+} */
+
+/* Target anchor tag by attribute selector */
+
+/* a[href="#"]{
+    text-decoration: none;
+    color: #ff0000;
+} */
+
+/* target anchor tag with class attribute */
+
+ /* header nav ul li .active{
+    color: #00ff2a;
+    text-decoration: underline;
+} */
+
+/* Target anchor tag by attribute selector */
+
+/* a[target="_self"]{
+    background-color: darkcyan;
+} */
+
+/* Target last p tag by pseudo selctor  */
+
+/* header nav :last-child::after{
+    content: '...';
+} */
+/* Target ul tag to change bullet points color  */
+/* header nav div ul{
+    list-style-type: none;
+    
+}
+header nav div ul li::before{
+    content:"\2022";
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+} */
+/* target 2nd p tag by using adjacent sibling selector */
+header nav div + p + p::first-letter{
+    color: brown;
+    font-size: 30px;
+}

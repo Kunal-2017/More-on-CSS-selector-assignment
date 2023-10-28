@@ -1,0 +1,20 @@
+
+
+header{
+    border: 1px solid black;
+}
+
+/* Target ul tag and a tag by descendant selector */
+
+header ul{
+    list-style-type: none;
+
+} 
+header nav ul li a{
+    text-decoration: none;
+    margin: 100px;
+}
+/* target li tag by direct child combinator */
+header>nav>ul>li{
+    display: inline;
+}
